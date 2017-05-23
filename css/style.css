@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #eb7517;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  list-style-type: none;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  text-transform: uppercase;
+  border-radius: 30px 30px 30px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.buttons .btn {
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.029) 50%, rgba(0, 0, 0, 0.03) 99%);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #17b3b2;
+}
+
+.btn .text {
+  width: 150px;
+  text-align: center;
+}
+
+.circle {
+  /*Do not shrink*/
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50% 50%;
+  background-color: #17b3b2;
+  color: white;
+  position: relative;
+  right: 0;
+}
+
+.circle .fa {
+  position: relative;
+  top: 0px;
+  right: -2px;
+}
+
+.popup {
+  position: absolute;
+  top: -1000px;
+}
+
+.popup.active {
+  top: 50%;
+}
