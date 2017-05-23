@@ -50,6 +50,11 @@
   justify-content: space-between;
   align-items: center;
   color: #17b3b2;
+  transition: width .3s;
+}
+
+.btn-main:hover {
+  width: 210px;
 }
 
 .btn .text {
@@ -108,15 +113,27 @@
   border-radius: 25px 25px 25px 25px;
 }
 
+.btn-popup:hover {
+  background-color: #cb5500;
+}
+
 .hide {
   position: absolute;
-  top: -22px;
-  right: -22px;
-  width: 45px;
-  height: 45px;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
   background-color: white;
   color: #eb7517;
   border-radius: 50% 50%;
+  transition: all .3s;
+}
+
+.hide:hover {
+  width: 46px;
+  height: 46px;
+  top: -23px;
+  right: -23px;
 }
 
 .header,
@@ -142,6 +159,7 @@
 .icon {
   margin-bottom: 20px;
 }
+
 
 /*Success animation*/
 
