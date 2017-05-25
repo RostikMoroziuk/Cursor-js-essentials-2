@@ -153,13 +153,13 @@ function forToWhile() {
 function promptUser() {
   var enterData1, enterData2;
   enterData1 = prompt("Enter number greater then 100 (function use while)", 101);
-  while (enterData1 < 101) {
+  while (!+enterData1 || enterData1 < 101) {
     enterData1 = prompt("Enter number greater then 100 (function use while)", 101);
   }
 
   do {
     enterData2 = prompt("Enter number greater then 100 (function use while)", 101);
-  } while (enterData2 < 101);
+  } while (!+enterData2 || enterData2 < 101);
 
   addResult(this.previousElementSibling, enterData1 + " " + enterData2);
 }
